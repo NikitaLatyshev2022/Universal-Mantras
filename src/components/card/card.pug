@@ -1,0 +1,14 @@
+mixin card()
+	.card
+		.card__img
+			+picture({
+				path: `${baseDir}assets/images/card/imagecard`,
+				ext: `png`,
+			})
+		.card__info
+			.card__info_title
+				p Universal Mantras
+			.card__info_text
+				p 7 mantras for your for happy life balance
+			.card__info_button
+				+svg("play")

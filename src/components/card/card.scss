@@ -1,0 +1,66 @@
+.card {
+	//position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: vc(50);
+	width: vc(267);
+
+	&__img {
+		z-index: 2;
+		display: flex;
+		clip-path: path("M227 0C249.091 0 267 17.9087 267 40.0001V315.217V355.164C266.971 333.108 249.092 315.235 227.034 315.217H40C17.9086 315.217 0 297.309 0 275.217V40C0 17.9086 17.9086 0 40 0H227Z");
+		height: vc(344);
+
+		picture,
+		img {
+			height: 100%;
+		}
+	}
+
+	&__info {
+		display: grid;
+		grid-auto-columns: 1fr;
+		grid-template-areas:
+			"title button"
+			"text button";
+		grid-template-columns: 1.3fr 0.7fr;
+		grid-template-rows: min-content min-content;
+		margin-top: vc(-65);
+		border-radius: 0 0 vc(40) vc(40);
+		padding-top: vc(50);
+		padding-left: vc(24);
+		background-color: #fff;
+		gap: vc(8) vc(23);
+
+		&_title {
+			grid-area: title;
+			font-weight: 500;
+			font-style: normal;
+			font-size: vc(18);
+			line-height: 150%;
+			text-shadow: 0 vc(4) vc(4) rgba(0, 0, 0, 0.25);
+			color: #907081;
+		}
+
+		&_text {
+			grid-area: text;
+			font-weight: 400;
+			font-style: normal;
+			font-size: vc(12);
+			line-height: 150%;
+			color: #907081;
+			opacity: 0.8;
+		}
+
+		&_button {
+			align-self: center;
+			justify-self: start;
+			grid-area: button;
+			border-radius: vc(50);
+			width: vc(48);
+			height: vc(48);
+			background-color: #f271ad;
+			filter: drop-shadow(0 vc(10) vc(30) rgba(234, 154, 191, 0.3));
+		}
+	}
+}

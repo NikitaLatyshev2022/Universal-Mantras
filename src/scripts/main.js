@@ -17,7 +17,7 @@ import analytics from '@components/analytics/analytics';
 import home from '../pages/home/home';
 import article from '../pages/article/article';
 import sharing from '../components/sharing/sharing';
-import demoRbc from '../pages/demo-rbc/demoRbc';
+// import demoRbc from '../pages/demo-rbc/demoRbc';
 
 // eslint-disable-next-line no-underscore-dangle
 window._debounce = debounce;

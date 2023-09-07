@@ -6,11 +6,12 @@ append globals
 append vars
 
 block content
-	+router(pageName)
-		.home
-			include @components/header/header
-			h1 Index.html
-			a(href="./article") article
-			include @components/footer/footer
-			include @components/analytics/analytics
-			+sharing('vk')
+	//+router(pageName)
+	//	.home
+	//		include @components/header/header
+	//		h1 Index.html
+	//		a(href="./article") article
+	//		include @components/footer/footer
+	//		include @components/analytics/analytics
+	//		+sharing('vk')
+	+card()
